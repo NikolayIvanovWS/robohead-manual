@@ -1,41 +1,27 @@
-# Website
+## Установка и локальная разработка
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+### Требования
+- [Node.js](https://nodejs.org/en/download/) (рекомендуется версия 20+)
+- Yarn или npm
 
-## Installation
-
-```bash
-yarn
-```
-
-## Local Development
+### Установка зависимостей
 
 ```bash
-yarn start
+npm install
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
+### Сборка и запуск
 
 ```bash
-yarn build
+npm run start
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Эта команда генерирует статическое содержимое в папку `build`, которое можно развернуть на любом хостинге статического контента. После этого запустит локальный сервер разработки и откроет сайт в браузере. Большинство изменений отражаются в реальном времени без перезагрузки сервера.
 
-## Deployment
 
-Using SSH:
+## Технологический стек
 
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- **Docusaurus 3.9.2** - платформа для создания документации
+- **React 19** - библиотека для пользовательского интерфейса
+- **KaTeX** - поддержка математических формул
+- **Prism React Renderer** - подсветка синтаксиса кода
